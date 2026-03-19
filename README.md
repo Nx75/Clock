@@ -26,6 +26,8 @@ It updates every second and shows the current system time.
 ```bash
 git clone https://github.com/Nx75/Clock.git```
 
+2. Open the folder and run index.html file
 
-OR
-GOTO : https://nx75.github.io/Clock/
+## Alternative method
+
+GO TO : https://nx75.github.io/Clock/
