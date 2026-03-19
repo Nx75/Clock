@@ -20,7 +20,7 @@ const clock = () => {
 
     let suffix = "";
 
-    if (hour_12){
+    if (hour_12) {
         suffix = h >= 12 ? "PM" : "AM";
         h = h % 12 || 12;
     }
@@ -29,9 +29,9 @@ const clock = () => {
     ampmEl.textContent = suffix;
     ampmEl.style.display = hour_12 ? "block" : "none"
 
-    let nowDate = now.toLocaleDateString("en-US",{
-        day : "numeric",
-        month : "long",
+    let nowDate = now.toLocaleDateString("en-US", {
+        day: "numeric",
+        month: "long",
         year: "numeric"
     })
 
@@ -43,16 +43,28 @@ const clock = () => {
     day.textContent = nowDay;
 }
 
-btn_12.addEventListener("click", ()=>{
+btn_12.addEventListener("click", () => {
     hour_12 = true;
-    btn_12.classList.add("activeToggle");
-    btn_24.classList.remove("activeToggle");
+
+    btn_12.classList.add("btn-active");
+    btn_12.classList.remove("btn");
+
+    btn_24.classList.add("btn");
+    btn_24.classList.remove("btn-active");
+
+    clock();
 })
 
-btn_24.addEventListener("click", ()=>{
+btn_24.addEventListener("click", () => {
     hour_12 = false;
-    btn_24.classList.add("activeToggle");
-    btn_12.classList.remove("activeToggle");
+
+    btn_24.classList.add("btn-active");
+    btn_24.classList.remove("btn");
+
+    btn_12.classList.add("btn");
+    btn_12.classList.remove("btn-active");
+
+    clock();
 })
 
 setInterval(clock, 1000)

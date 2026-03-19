@@ -1,25 +1,151 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 25px;
+}
+
+nav.toggle-nav {
+    margin-bottom: 2rem;
+    display: flex;
+    background: #1e293b;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.toggle-nav input {
+    display: none;
+}
+
+.toggle-nav label {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #aaa;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.toggle-nav input:checked + label {
+    background-color: #22c55e;
+    color: #000;
+    box-shadow: 0 0 10px #22c55eaa;
 }
 
 main {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.header {
-    border: 3px solid black;
-    border-radius: 25px;
-    padding: 2rem;
+.card {
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #0f172a;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .brand {
-    display: inline-flex;
-    border: 5px solid black;
-    margin: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.logo {}
+.logo {
+    background: #22c55e;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.toggle-button {
+    display: flex;
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.toggle-button div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.btn-active {
+    background: #22c55e;
+    font-weight: bold;
+}
+
+
+.time-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.time {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.abbreviations {
+    font-size: 14px;
+    background: #22c55e;
+    color: #000;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+
+.info {
+    text-align: center;
+}
+
+#date {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.day {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
