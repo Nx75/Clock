@@ -25,5 +25,7 @@ It updates every second and shows the current system time.
 1. Clone the repository:
 ```bash
 git clone https://github.com/Nx75/Clock.git```
+
+
 OR
 GOTO : https://nx75.github.io/Clock/
