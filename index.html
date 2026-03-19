@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,58 +8,52 @@
 </head>
 
 <body>
-    <div class="layout">
-        <nav class="toggle-nav">
-            <input type="radio" name="style" id="neumorphism" checked>
-            <label for="neumorphism" class="btn">
-                Neumorphism
-            </label>
+<div class="layout">
 
-            <input type="radio" name="style" id="minimalist">
-            <label for="minimalist" class="btn">
-                Minimalist UI
-            </label>
+    <nav class="toggle-nav">
+        <input type="radio" name="style" id="neumorphism" checked>
+        <label for="neumorphism">Neumorphism</label>
 
-            <input type="radio" name="style" id="neobrutalism">
-            <label for="neobrutalism" class="btn">
-                Neobrutalism
-            </label>
+        <input type="radio" name="style" id="minimalist">
+        <label for="minimalist">Minimalist UI</label>
 
-        </nav>
-        <main>
-            <div class="card">
+        <input type="radio" name="style" id="neobrutalism">
+        <label for="neobrutalism">Neobrutalism</label>
+    </nav>
 
-                <div class="brand">
-                    <div class="logo">Nx75</div>
-                    <div class="inner">
-                        <div class="title">Advanced Clock</div>
-                        <div class="subtitle">12 / 24 Hour</div>
-                    </div>
+    <main>
+        <div class="card">
+
+            <div class="brand">
+                <div class="logo">Nx75</div>
+                <div>
+                    <div class="title">Advanced Clock</div>
+                    <div class="subtitle">12 / 24 Hour</div>
                 </div>
-
-                <div class="toggle-button">
-                    <div class="btn-active" id="btn-12">12 Hours</div>
-                    <div class="btn" id="btn-24">24 Hours</div>
-                </div>
-
-                <div class="display">
-                    <div class="time-wrap">
-                        <div class="time" id="time">00:00:00</div>
-                        <div class="abbreviations" id="abbreviations">AM</div>
-                    </div>
-                </div>
-
-                <div class="info">
-                    <div id="date">January 1, 2026</div>
-                    <div class="day" id="day">Sunday</div>
-                </div>
-
             </div>
-        </main>
 
-    </div>
+            <div class="toggle-button">
+                <div class="btn-active" id="btn-12">12 Hours</div>
+                <div id="btn-24">24 Hours</div>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="display">
+                <div class="time-wrap">
+                    <div class="time" id="time">00:00:00</div>
+                    <div class="abbreviations" id="abbreviations">AM</div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div id="date">January 1, 2026</div>
+                <div class="day" id="day">Sunday</div>
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+<script src="script.js"></script>
 </body>
-
 </html>
