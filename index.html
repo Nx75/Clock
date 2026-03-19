@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="neumorphism.css" id="theme-style">
 </head>
 
 <body>
     <div class="layout">
         <nav class="toggle-nav">
-            <input type="radio" name="style" id="minimalist" checked>
+            <input type="radio" name="style" id="neumorphism" checked>
+            <label for="neumorphism" class="btn">
+                Neumorphism
+            </label>
+
+            <input type="radio" name="style" id="minimalist">
             <label for="minimalist" class="btn">
                 Minimalist UI
             </label>
@@ -21,16 +26,12 @@
                 Neobrutalism
             </label>
 
-            <input type="radio" name="style" id="neumorphism">
-            <label for="neumorphism" class="btn">
-                Neumorphism
-            </label>
         </nav>
         <main>
             <div class="card">
 
                 <div class="brand">
-                    <div class="logo">NX75</div>
+                    <div class="logo">Nx75</div>
                     <div class="inner">
                         <div class="title">Advanced Clock</div>
                         <div class="subtitle">12 / 24 Hour</div>

@@ -4,6 +4,7 @@ const time = document.getElementById("time")
 const ampmEl = document.getElementById("abbreviations")
 const date = document.getElementById("date")
 const day = document.getElementById("day")
+const theme = document.getElementById("theme-style")
 
 let hour_12 = true;
 
@@ -69,3 +70,13 @@ btn_24.addEventListener("click", () => {
 
 setInterval(clock, 1000)
 clock(); 
+
+const themeLink = document.getElementById("theme-style");
+
+document.querySelectorAll('input[name="style"]').forEach(radio => {
+    radio.addEventListener("change", () => {
+        if (radio.checked) {
+            themeLink.href = radio.id + ".css";
+        }
+    });
+});
